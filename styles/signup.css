@@ -68,6 +68,12 @@ input {
     position: relative;
     display: flex;
     align-items: center;
+    margin-bottom: 2em;
+}
+
+.password-wrapper {
+    display: flex;
+    flex-direction: column;
 }
 
 /* Position the icon inside the field */
@@ -163,5 +169,41 @@ input {
 
 .create-account {
     color: #1a73e8;
+    cursor: pointer;
+}
+
+.terms-container {
+    display: flex;
+    align-items: flex-start;
+    /* Aligns checkbox with the first line of text */
+    gap: 10px;
+    /* Space between box and text */
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.terms-container input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+    /* Fine-tunes the vertical position */
+    cursor: pointer;
+    accent-color: #FF7A18;
+    /* Turns the checkmark your brand orange! */
+}
+
+.terms-container label {
+    font-size: 0.85rem;
+    font-weight: normal;
+    /* Not bold like the field labels */
+    color: #555;
+    line-height: 1.4;
+    cursor: pointer;
+}
+
+.terms-container label span {
+    color: #1a73e8;
+    /* "Usual blue" for links */
+    text-decoration: underline;
     cursor: pointer;
 }

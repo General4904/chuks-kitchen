@@ -7,7 +7,7 @@
     <title>Chuks Kitchen</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="styles/signin.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/signup.css">
 </head>
 
 <body>
@@ -30,7 +30,7 @@
                 <a href="index.html">
                     <p class="brand-name">Chuks Kitchen</p>
                 </a>
-                <p>Login To Your Account</p>
+                <p>Create Your Account</p>
             </header>
 
 
@@ -42,18 +42,37 @@
                             <img src="images/mail.svg" class="input-icon" alt="email icon">
                             <input type="text" id="username" name="username" placeholder="name@gmail.com" required>
                         </div>
+
+                        <label for="username">Phone number</label>
+                        <div class="input-wrapper">
+                            <img src="images/phone.svg" class="input-icon" alt="phone icon">
+                            <input type="phone" id="phone" name="phone" placeholder="8123340690" required>
+                        </div>
                     </div>
 
                     <div class="input-group">
                         <div class="label-row">
                             <label for="password">Password</label>
-
                         </div>
                         <div class="input-wrapper">
                             <img src="images/padlock.svg" class="input-icon" alt="password icon">
                             <input type="password" id="password" name="password" placeholder="*******" required>
                         </div>
-                        <a href="#" class="forgot-password">Forgot password?</a>
+
+                        <div class="label-row">
+                            <label for="password">Confirm Password</label>
+                        </div>
+                        <div class="input-wrapper">
+                            <img src="images/padlock.svg" class="input-icon" alt="password icon">
+                            <input type="password" id="password" name="password" placeholder="*******" required>
+                        </div>
+                    </div>
+
+                    <div class="terms-container">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">
+                            I agree to the <span>Terms and Conditions</span> and <span>Privacy Policy</span>
+                        </label>
                     </div>
                     <div class="continue">
                         <button type="submit">Continue</button>
@@ -72,9 +91,8 @@
                             Continue with Apple
                         </button>
                     </div>
-                    <p class="auth-toggle">Don't have an account? <a href="signup.html"><span
-                                class="create-account">Create
-                                an account</span></a>
+                    <p class="auth-toggle">Already have an account? <a href="signin.html"><span
+                                class="create-account">Sign In</span></a>
                     </p>
                 </form>
             </section>

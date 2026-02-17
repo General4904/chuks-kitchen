@@ -1,0 +1,162 @@
+/* Styles for the sign in page */
+
+#hero {
+    background-color: #FF7A18B2;
+    /* display: none; */
+    background: linear-gradient(#FF7A18B2), url('../images/welcome_onboarding.png');
+    background-size: cover;
+}
+
+#container header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.hero-intro {
+    text-align: center;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.login-container {
+    max-width: 400px;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    /* Stacks label on top of input */
+    margin-bottom: 1.5rem;
+    text-align: left;
+    /* Ensures text starts at the left */
+}
+
+label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    /* Space between label and field */
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 12px 12px 12px 40px;
+    /* The '40px' creates space for the icon on the left */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    /* Ensures padding doesn't break width */
+}
+
+/* Container must be relative so the icon can be absolute to it */
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Position the icon inside the field */
+.input-icon {
+    position: absolute;
+    left: 12px;
+    /* Distance from the left edge */
+    width: 18px;
+    /* Size of your icon */
+    height: 18px;
+    pointer-events: none;
+    /* Allows clicks to pass through to the input */
+    opacity: 0.6;
+    /* Makes the icon look subtle */
+}
+
+.label-row {
+    display: flex;
+    justify-content: space-between;
+    /* Pushes Label left, Link right */
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.forgot-password {
+    font-size: 0.85rem;
+    color: #1a73e8;
+    /* The "Usual Blue" */
+    text-decoration: none;
+    text-align: right;
+    /* Removes underline until hover */
+    font-weight: 500;
+}
+
+.forgot-password:hover {
+    text-decoration: none;
+    color: #174ea6;
+    /* Slightly darker blue on hover */
+}
+
+.login-container form .continue {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.login-container form .continue button {
+    height: 4em;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    background-color: #FF7A18;
+    border: 1px solid #FF7A18;
+}
+
+.social-login {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+/* Social Button Styling */
+.btn-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    /* Space between icon and text */
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-social img {
+    width: 40px;
+    /* Fixed icon size */
+    height: 40px;
+}
+
+.btn-social:hover {
+    background-color: #f9f9f9;
+    border-color: #ccc;
+}

@@ -49,6 +49,10 @@ body {
     font-family: var(--font-body);
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -64,7 +68,7 @@ body {
     flex-direction: row;
 }
 
-#hero {
+.hero {
     height: 100%;
     width: 50%;
     background-image: url(../images/welcome_onboarding.png);
@@ -226,7 +230,7 @@ body {
     border: 1px solid var(--color-text-dark);
 }
 
-#order-button {
+.myButton {
     border: 1px solid var(--color-primary);
     color: var(--color-white);
     background-color: var(--color-primary);

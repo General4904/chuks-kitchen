@@ -104,6 +104,10 @@ header {
     padding: 1em 0;
 }
 
+.menu {
+    color: #FF7A18;
+}
+
 .myButton {
     text-align: center;
     padding: 1em 3em;

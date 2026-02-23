@@ -1,0 +1,85 @@
+/* Styles */
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.hero {
+    width: 100%;
+    min-height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('../images/explore-hero.png') no-repeat center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 10%;
+}
+
+/* This makes the sidebar and dishes sit side-by-side */
+section {
+    width: 100%;
+    padding: 3em;
+    background-color: hsla(220, 14%, 96%, 1);
+}
+
+/* Sidebar Container */
+.menu-categories {
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 2em 0;
+}
+
+.dish-categories {
+    padding: 12px 1em;
+    cursor: pointer;
+}
+
+.popular {
+    background-color: hsla(29, 100%, 88%, 1);
+    border-left: 5px solid hsla(25, 100%, 55%, 1);
+}
+
+.dishes {
+    padding: 0;
+}
+
+h2 {
+    text-align: left;
+}
+
+.jollof-explore-img {
+    background-image: url(../images/jollof-explore-img.png);
+}
+
+.eba-explore-img {
+    background-image: url(../images/eba-explore-img.png);
+}
+
+.pounded-yam-explore-img {
+    background-image: url(../images/pounded-yam-explore-img.png);
+}
+
+.snail-explore-img {
+    background-image: url(../images/snail-explore-img.png);
+}
+
+.tilapia-explore-img {
+    background-image: url(../images/tilapia-explore-img.png);
+}
+
+.fufu-explore-img {
+    background-image: url(../images/fufu.png);
+}
+
+.gbegiri-explore-img {
+    background-image: url(../images/gbegiri.png);
+}
+
+.smoke-fish-explore-img {
+    background-image: url(../images/smoked-fish-explore-img.png);
+}
